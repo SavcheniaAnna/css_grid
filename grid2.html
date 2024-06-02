@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>grid</title>
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+  margin: 0;
+}
+
+
+  #main{display: grid;
+    height: 1366px;
+    grid-template-columns: 33.5% 11.5% 21.5% 33.5%;
+    grid-template-rows: 31.25% 18.75% 18.75% 31.25%;
+    font-family: Roboto;
+    font-size: 80%;}
+  #black{background-image: url(images/rectangle1.png);
+    background-size:cover;
+    background-position: left center;
+    grid-column-start: 1;
+    grid-column-end: 4;}
+  #red{
+    grid-column-start: 4;
+    grid-column-end: 5;}
+  #purple{background-image: url(images/rectangle2.png);
+    background-size:cover;
+    background-position: left center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding:0% 10% 0% 7%;}
+  #blue{background-image: url(images/rectangle3.png);
+    background-size:cover;
+    background-position: left center;}
+  #green{background-image: url(images/rectangle4.png);
+    background-size:cover;
+    background-position: left center;}
+
+  #blue,#green{padding:0% 17% 0% 7%;
+    grid-column-start: 3;
+    grid-column-end: 5;}
+
+  #yellow{background-image: url(images/rectangle5.png);
+    background-size:cover;
+    background-position: left center;
+    grid-column-start: 1;
+    grid-column-end: 2;}
+  #orange{background-image: url(images/rectangle6.png);
+    background-size:cover;
+    background-position: left center;
+    grid-column-start: 2;
+    grid-column-end:5;}
+  #green,#yellow,#orange,#purple{color: white;}
+
+
+  .block2{padding: 0% 10%;}
+  .block22,.block31,.block41{font-size: 200%;}
+  .block22{padding-left:10%;}
+  .block23{padding: 0% 0% 5%10%;}
+  #butt1,#butt2{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3%;
+    margin-top: 3%;}
+  #butt2{color: white;
+    border: 1px solid white;}
+  .block5{
+    position: relative;
+    top: 35%;
+    left: 10%}
+  span{font-weight: 900;}
+  .block5{margin:0px;}
+  .block6{font-size: 40%;
+    margin: 10px;}
+  </style>
+ </head>
+ <body>
+  <div id="main">
+    <div id="black"></div>
+    <div id="red">
+     <p class="block2"><img src="images/shape.png"></p> 
+     <p class="block22">Ali Sayed's <br><span> Web Designing</span><br>Project</p>
+     <p class="block23">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy hibh euismod tincidunt ut laoreet dolore.</p>
+     <p class="block23">quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dol.</p>
+    </div>
+    <div id="purple"><p class="block31">Drawing <span>Scketch</span></p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
+      <p class="block31">Making <span>Design</span></p>
+      <p>Lorem ipsum dolor sit amet, consecteluer ad pissing elit, sed diam nonummy nibh euismod quis nostrud exerci tation ullamcorper suscipit lobortis nisi ut aliquip ex consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
+      <p class="block31">Developing <span>Product</span></p>
+      <p>Lorem ipsum dolor sit amet, consecteluer ad pissing elit, sed diam nonummy nibh euismod quis nostrud exerci tation ullamcorper suscipit lobortis nisi ut aliquip ex consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
+    </div>
+    <div id="blue"><p class="block41">Best <span>Strarting</span></p>
+      <p>Lorem ipsum dolor sit amet, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore.quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
+      <input type="button" id="butt1" value="View Our History">
+    </div>
+    <div id="green"><p class="block31">Verified <span>Dummy</span></p>
+      <p>Lorem ipsum dolor sit amet, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore.quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
+      <input type="button" id="butt2" value="Go To The Page"></div>
+    <div id="yellow"><p class="block22">This Webpage Is<br><span>Designed By</span></p>
+    <p class="block5"><img src="images/shape2.png"></p>
+    <p class="block5"><span class="block41">Ali Sayed</span></p>
+    <p class="block5">Graphic Designer</p>
+    </div>
+    <div id="orange" class="block22">
+      <p>Say <span>'Hello'</span></p>
+      <input type="name" id="butt2" value="Your Name">
+      <input type="email" id="butt2" value="Your Email">
+      <textarea id="butt2" cols="40" rows="5">Your Message Here...</textarea>
+      <p class="block6">Stay Connected With Us...</p>
+      <p class="block6"><img src="images/shape3.png"></p>
+      <p class="block6">Please Feel Free To Contat With me For Any Kind of Prject.</p>
+    </div>
+  </div>
+ </body>
+</html> 
